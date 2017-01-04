@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_main"
+    android:background="@android:color/white">
+    <ScrollView android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_margin="5dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/avatar"
+        android:layout_below="@+id/title_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/body_text" />
+
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_by"
+        android:layout_above="@+id/body_text"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_marginBottom="15dp" />
+</RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_text"
+            android:textSize="18sp"
+            android:layout_below="@+id/body_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/comments"
+        android:layout_alignTop="@+id/user_by"
+        android:layout_toRightOf="@+id/user_by"
+        android:layout_toEndOf="@+id/user_by" /></LinearLayout>
+
+</LinearLayout>
