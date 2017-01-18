@@ -1,4 +1,4 @@
-package uk.co.theappexperts.shawn.assignment;
+package uk.co.example.shawn.assignment;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -14,7 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
-import uk.co.theappexperts.shawn.assignment.model.Post;
+import uk.co.example.shawn.assignment.model.Post;
 
 public class MainActivity extends AppCompatActivity {
 

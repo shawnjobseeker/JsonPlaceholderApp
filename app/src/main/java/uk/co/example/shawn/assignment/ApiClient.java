@@ -1,7 +1,6 @@
-package uk.co.theappexperts.shawn.assignment;
+package uk.co.example.shawn.assignment;
 
 import android.app.Application;
-import android.support.v4.util.LruCache;
 
 import com.laimiux.rxnetwork.RxNetwork;
 
@@ -17,10 +16,10 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static uk.co.theappexperts.shawn.assignment.Constants.BASE_URL;
+import static uk.co.example.shawn.assignment.Constants.BASE_URL;
 
 /**
- * Created by TheAppExperts on 03/01/2017.
+ * Created by Shawn Li on 03/01/2017.
  */
 
 public class ApiClient {

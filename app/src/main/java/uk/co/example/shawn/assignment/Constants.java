@@ -1,7 +1,7 @@
-package uk.co.theappexperts.shawn.assignment;
+package uk.co.example.shawn.assignment;
 
 /**
- * Created by TheAppExperts on 04/01/2017.
+ * Created by Shawn Li on 04/01/2017.
  */
 
 public class Constants {

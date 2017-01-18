@@ -6,7 +6,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
     defaultConfig {
-        applicationId "uk.co.theappexperts.shawn.assignment"
+        applicationId "uk.co.example.shawn.assignment"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -40,5 +40,16 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    testCompile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.assertj:assertj-android:1.1.0'
+    testCompile 'org.robolectric:robolectric:3.0'
+    testCompile('org.robolectric:shadows-support-v4:3.0') {
+        exclude module: 'support-v4'
+    }
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    testCompile 'org.powermock:powermock-module-junit4:1.6.5'
+    testCompile 'org.powermock:powermock-module-junit4-rule:1.6.5'
+    testCompile 'org.powermock:powermock-api-mockito:1.6.5'
+    testCompile 'org.powermock:powermock-classloading-xstream:1.6.5'
 }

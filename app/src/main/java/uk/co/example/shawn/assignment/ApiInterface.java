@@ -1,15 +1,15 @@
-package uk.co.theappexperts.shawn.assignment;
+package uk.co.example.shawn.assignment;
 
 import java.util.List;
 
 import retrofit2.http.GET;
 import rx.Observable;
-import uk.co.theappexperts.shawn.assignment.model.Comment;
-import uk.co.theappexperts.shawn.assignment.model.Post;
-import uk.co.theappexperts.shawn.assignment.model.User;
+import uk.co.example.shawn.assignment.model.Comment;
+import uk.co.example.shawn.assignment.model.Post;
+import uk.co.example.shawn.assignment.model.User;
 
 /**
- * Created by TheAppExperts on 04/01/2017.
+ * Created by Shawn Li on 04/01/2017.
  */
 
 

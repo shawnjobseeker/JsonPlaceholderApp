@@ -1,10 +1,10 @@
-package uk.co.theappexperts.shawn.assignment.model;
+package uk.co.example.shawn.assignment.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by TheAppExperts on 03/01/2017.
+ * Created by Shawn Li on 03/01/2017.
  */
 public class Address {
 

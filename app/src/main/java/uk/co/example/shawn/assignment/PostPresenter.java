@@ -1,19 +1,12 @@
-package uk.co.theappexperts.shawn.assignment;
-
-import android.content.Context;
+package uk.co.example.shawn.assignment;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
-import rx.Observable;
 import rx.Observer;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
-import rx.functions.Func1;
-import rx.schedulers.Schedulers;
-import uk.co.theappexperts.shawn.assignment.model.Comment;
+import uk.co.example.shawn.assignment.model.Comment;
 
 /**
- * Created by TheAppExperts on 03/01/2017.
+ * Created by Shawn Li on 03/01/2017.
  */
 
 public class PostPresenter {

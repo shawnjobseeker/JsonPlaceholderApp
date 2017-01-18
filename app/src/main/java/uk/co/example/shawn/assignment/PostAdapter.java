@@ -1,4 +1,4 @@
-package uk.co.theappexperts.shawn.assignment;
+package uk.co.example.shawn.assignment;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -16,20 +16,20 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.Realm;
-import uk.co.theappexperts.shawn.assignment.model.Comment;
-import uk.co.theappexperts.shawn.assignment.model.Post;
-import uk.co.theappexperts.shawn.assignment.model.User;
+import uk.co.example.shawn.assignment.model.Post;
+import uk.co.example.shawn.assignment.model.User;
 
-import static uk.co.theappexperts.shawn.assignment.Constants.AVATAR_URL;
+import static uk.co.example.shawn.assignment.Constants.AVATAR_URL;
 
 /**
- * Created by TheAppExperts on 04/01/2017.
+ * Created by Shawn Li on 04/01/2017.
  */
 
-public class CommentAdapter extends ArrayAdapter<Comment> {
+public class PostAdapter extends ArrayAdapter<Post> {
 
-    public CommentAdapter(Context context, List<Comment> comments) {
-        super(context, 0, comments);
+
+    public PostAdapter(Context context, List<Post> posts) {
+        super(context, 0, posts);
     }
     class ViewHolder {
         @BindView(R.id.user_text)
@@ -46,7 +46,7 @@ public class CommentAdapter extends ArrayAdapter<Comment> {
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
+    ViewHolder holder;
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.row, parent, false);
             holder = new ViewHolder(convertView);
@@ -54,10 +54,13 @@ public class CommentAdapter extends ArrayAdapter<Comment> {
         }
         else
             holder = (ViewHolder)convertView.getTag();
-        Comment comment = getItem(position);
-        holder.user.setText(comment.getName());
-        holder.body.setText(comment.getBody());
-        Picasso.with(getContext()).load(AVATAR_URL + comment.getEmail() + ".png").into(holder.avatar);
+        Realm realm = Realm.getDefaultInstance();
+        Post post = getItem(position);
+        User user = realm.where(User.class).equalTo("id", post.getUserId()).findFirst();
+        holder.user.setText(user.getUsername());
+        holder.body.setText(post.getTitle());
+        Picasso.with(getContext()).load(AVATAR_URL + user.getEmail() + ".png").into(holder.avatar);
+        realm.close();
         return convertView;
     }
 }

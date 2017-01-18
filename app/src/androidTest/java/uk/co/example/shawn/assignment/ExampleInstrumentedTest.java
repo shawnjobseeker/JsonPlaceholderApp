@@ -1,4 +1,4 @@
-package uk.co.theappexperts.shawn.assignment;
+package uk.co.example.shawn.assignment;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("uk.co.theappexperts.shawn.assignment", appContext.getPackageName());
+        assertEquals("uk.co.example.shawn.assignment", appContext.getPackageName());
     }
 }

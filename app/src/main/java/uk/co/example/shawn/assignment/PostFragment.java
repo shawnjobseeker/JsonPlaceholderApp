@@ -1,4 +1,4 @@
-package uk.co.theappexperts.shawn.assignment;
+package uk.co.example.shawn.assignment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,15 +15,13 @@ import com.squareup.picasso.Picasso;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.Realm;
-import io.realm.RealmResults;
-import uk.co.theappexperts.shawn.assignment.model.Comment;
-import uk.co.theappexperts.shawn.assignment.model.Post;
-import uk.co.theappexperts.shawn.assignment.model.User;
+import uk.co.example.shawn.assignment.model.Post;
+import uk.co.example.shawn.assignment.model.User;
 
-import static uk.co.theappexperts.shawn.assignment.Constants.AVATAR_URL;
+import static uk.co.example.shawn.assignment.Constants.AVATAR_URL;
 
 /**
- * Created by TheAppExperts on 03/01/2017.
+ * Created by Shawn Li on 03/01/2017.
  */
 
 public class PostFragment extends Fragment {

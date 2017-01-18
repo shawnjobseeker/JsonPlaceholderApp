@@ -1,22 +1,20 @@
-package uk.co.theappexperts.shawn.assignment;
+package uk.co.example.shawn.assignment;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 
 import java.util.List;
 
 import io.realm.Realm;
-import io.realm.RealmConfiguration;
 import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
-import uk.co.theappexperts.shawn.assignment.model.Comment;
-import uk.co.theappexperts.shawn.assignment.model.Post;
-import uk.co.theappexperts.shawn.assignment.model.User;
+import uk.co.example.shawn.assignment.model.Comment;
+import uk.co.example.shawn.assignment.model.Post;
+import uk.co.example.shawn.assignment.model.User;
 
 /**
- * Created by TheAppExperts on 03/01/2017.
+ * Created by Shawn Li on 03/01/2017.
  */
 
 public class MainActivityPresenter {
